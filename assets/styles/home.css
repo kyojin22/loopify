@@ -1,70 +1,74 @@
 .app {
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../images/bg.jpg") center/cover no-repeat;
 }
 
 #progressBar,
 #volumeControl {
-  margin-top: 10px;
-  height: 8px;
-  border-radius: 8px;
-  background: var(--red-transparent);
-  outline: none;
+    margin-top: 10px;
+    height: 8px;
+    border-radius: 8px;
+    background: var(--red-transparent);
+    outline: none;
 }
 
 #progressBar::-webkit-slider-thumb,
 #volumeControl::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
-  background: var(--red);
-  border-radius: 50%;
-  cursor: pointer;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--red);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #progressBar::-webkit-range-progress,
 #volumeControl::-webkit-range-progress {
-  height: 8px;
-  background: var(--red);
-  border-radius: 4px;
+    height: 8px;
+    background: var(--red);
+    border-radius: 4px;
 }
 
 #progressBar::-moz-range-thumb,
 #volumeControl::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  background: var(--red);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background: var(--red);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #progressBar::-moz-range-progress,
 #volumeControl::-moz-range-progress {
-  height: 8px;
-  background: var(--red);
-  border-radius: 4px;
+    height: 8px;
+    background: var(--red);
+    border-radius: 4px;
 }
 
 #playPauseBtn {
-  color: var(--primary-text);
-  font-size: 14px;
+    color: var(--primary-text);
+    font-size: 14px;
 
-  padding: 7px 10.5px;
+    padding: 7px 10.5px;
 
-  border: 1px solid var(--red);
-  border-radius: 8px;
-  background: transparent;
+    border: 1px solid var(--red);
+    border-radius: 8px;
+    background: transparent;
 
-  transition: all 200ms ease;
+    transition: all 200ms ease;
 }
 
 #playPauseBtn:hover {
-  color: #000;
-  background: var(--red);
+    color: #000;
+    background: var(--red);
 }
