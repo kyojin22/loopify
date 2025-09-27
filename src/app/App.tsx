@@ -104,6 +104,7 @@ export default function App() {
           src={url}
           onTimeUpdate={handleTimeUpdate}
           onLoadedMetadata={handleLoadedMetadata}
+          loop
         />
       )}
 
