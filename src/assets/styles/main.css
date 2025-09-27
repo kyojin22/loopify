@@ -13,6 +13,11 @@
   --secondary-txt: #a9b1d6;
 }
 
+::selection {
+  color: var(--primary-txt);
+  background: var(--red);
+}
+
 * {
   color: var(--primary-txt);
 
